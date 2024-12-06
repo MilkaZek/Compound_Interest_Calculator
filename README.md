@@ -11,3 +11,5 @@ Inputs:
 Outputs:
 - Compound Interest: how much interest has been accumulated (does not including the principal)
 Total Amount: the total amount of money; includes the principal and the compound interest earned
+
+Developed by Milka Zekarias for CMSI 2021 using CodeSandbox and can be found here (hosted on GitHub): https://milkazek.github.io/Compound_Interest_Calculator/
