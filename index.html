@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compound Interest Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id ="title_with_emojis">
+      <div id = "first_money_bag_emoji">&#128176</div>
+      <h1>Compound Interest Calculator</h1>
+      <div id = "second_money_bag_emoji">&#128176</div>
+      </div>
+      <h3>Please enter each of the elements listed below</h3>
+    </header>
+
+    <main>
+      <div class="input_names_and_boxes">
+        <div class="one_input_name_and_box">
+          <div>Principal:</div>
+          <div>
+            <input type="number" placeholder="Enter principal" id="principal" />
+          </div>
+        </div>
+        <div class="one_input_name_and_box">
+          <div>Interest Rate:</div>
+          <div>
+            <!-- <input
+              type="number"
+              placeholder="Enter interest rate"
+              id="interest_rate"
+            /> -->
+            <input
+              type="range"
+              id="interest_rate"
+              min="0.25"
+              max="50"
+              value="2.5"
+              step="0.25"
+            />
+            <output id="aprText">2.5</output>
+          </div>
+        </div>
+        <div class="one_input_name_and_box">
+          <div>Number of times compounded<br />per year:</div>
+          <div>
+            <select id="num_of_times_compounded_per_year">
+              <option value="365">Daily</option>
+              <option value="12">Monthly</option>
+              <option value="4">Quarterly</option>
+              <option value="1">Yearly</option>
+            </select>
+          </div>
+        </div>
+        <div class="one_input_name_and_box">
+          <div>Total number of years:</div>
+          <div>
+            <input
+              type="number"
+              placeholder="Enter total number of years"
+              id="total_num_of_years"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="money_graph_image">
+        <img
+          src="https://images.pexels.com/photos/6289026/pexels-photo-6289026.jpeg"
+          alt=" Image of a bar graph with a white arrow going up and a gold coin
+        above each of the three blue bars against a light purple background"
+        />
+      </div>
+      <div class="output_elements">
+        <output id="compound_interest">The Interest accumulated is ...</output>
+        <output id="total_with_interest"
+          >The Total including the Compound Interest is ...</output
+        >
+      </div>
+      <footer>
+        <a
+          href="https://codesandbox.io/p/sandbox/compound-interest-web-dev-project-5kczf7?workspaceId=e242e949-dbf9-4fd7-b7d9-50047a7a2dd9&layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522cm0x8a49l00063b6izi3ggfe1%2522%252C%2522sizes%2522%253A%255B100%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522cm0x8a49l00023b6ij0vk2wk4%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522cm0x8a49l00033b6i5entvf10%2522%257D%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522cm0x8a49l00053b6it4lrssoc%2522%257D%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522cm0x8a49l00023b6ij0vk2wk4%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0x8a49l00013b6ikt6mnhdc%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252Findex.html%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%255D%252C%2522id%2522%253A%2522cm0x8a49l00023b6ij0vk2wk4%2522%252C%2522activeTabId%2522%253A%2522cm0x8a49l00013b6ikt6mnhdc%2522%257D%252C%2522cm0x8a49l00053b6it4lrssoc%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0x8a49l00043b6imf6r2i4b%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%257D%255D%252C%2522id%2522%253A%2522cm0x8a49l00053b6it4lrssoc%2522%252C%2522activeTabId%2522%253A%2522cm0x8a49l00043b6imf6r2i4b%2522%257D%252C%2522cm0x8a49l00033b6i5entvf10%2522%253A%257B%2522tabs%2522%253A%255B%255D%252C%2522id%2522%253A%2522cm0x8a49l00033b6i5entvf10%2522%257D%257D%252C%2522showDevtools%2522%253Afalse%252C%2522showShells%2522%253Afalse%252C%2522showSidebar%2522%253Afalse%252C%2522sidebarPanelSize%2522%253A15%257D"
+          target="_blank"
+          rel="noopener noreferrer"
+          >&#169; 2024 Developed by Milka Z. for CMSI 2021 - Click here to go to
+          repo</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>
