@@ -1,11 +1,11 @@
 const principalBox = document.querySelector("#principal");
-const interestRateSlider = document.querySelector("#interest_rate");
+const interestRateSlider = document.querySelector("#interestRate");
 const timesCompoundedBox = document.querySelector(
-  "#num_of_times_compounded_per_year"
+  "#numOfTimesCompoundedPerYear"
 );
-const totalYearsBox = document.querySelector("#total_num_of_years");
-const compoundInterestOutput = document.querySelector("#compound_interest");
-const totalAmountOutput = document.querySelector("#total_with_interest");
+const totalYearsBox = document.querySelector("#totalNumOfYears");
+const compoundInterestOutput = document.querySelector("#compoundInterest");
+const totalAmountOutput = document.querySelector("#totalWithInterest");
 const aprText = document.querySelector("#aprText");
 
 interestRateSlider.addEventListener("input", () => {
@@ -18,18 +18,18 @@ totalYearsBox.addEventListener("input", updateCompoundInterest);
 
 function updateCompoundInterest() {
   const principal = Number(principalBox.value);
-  const interest_rate = Number(interestRateSlider.value / 100);
-  const times_compounded = Number(timesCompoundedBox.value);
-  const num_of_years = Number(totalYearsBox.value);
-  const total_amount =
+  const interestRate = Number(interestRateSlider.value / 100);
+  const timesCompounded = Number(timesCompoundedBox.value);
+  const numOfYears = Number(totalYearsBox.value);
+  const totalAmount =
     principal *
-    (1 + interest_rate / times_compounded) ** (times_compounded * num_of_years);
-  const interest_accumulated = total_amount - principal;
-  compoundInterestOutput.textContent = `The Interest accumulated is $${interest_accumulated.toFixed(
+    (1 + interestRate / timesCompounded) ** (timesCompounded * numOfYears);
+  const interestAccumulated = totalAmount - principal;
+  compoundInterestOutput.textContent = `The Interest accumulated is $${interestAccumulated.toFixed(
     2
   )}`;
-  totalAmountOutput.textContent = `The Total including the Compound Interest is $${total_amount.toFixed(
+  totalAmountOutput.textContent = `The Total including the Compound Interest is $${totalAmount.toFixed(
     2
   )}`;
-  console.log(compound_interest);
+  console.log(compoundInterest);
 }
