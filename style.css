@@ -63,13 +63,13 @@ h1 {
   padding: 20px;
   margin: 0;
   text-shadow: 2px 2px 2px black;
-  animation: growing_title 3s linear;
+  animation: growingTitle 3s linear;
 }
 
 h3 {
   margin: 10px 0 0 0;
   font-size: 20px;
-  animation: growing_directions 3s linear;
+  animation: growingDirections 3s linear;
 }
 
 .inputNamesAndBoxes {
