@@ -27,20 +27,20 @@ main {
   overflow-y: scroll;
 }
 
-#title_with_emojis {
+#titleWithEmojis {
   display: flex;
   justify-content: center;
 }
 
-#first_money_bag_emoji {
+#firstMoneyBagEmoji {
   transform: rotate(-20deg);
 }
 
-#second_money_bag_emoji {
+#secondMoneyBagEmoji {
   transform: rotate(20deg);
 }
 
-#money_graph_image {
+#moneyGraphImage {
   grid-column: 2;
   grid-row: 2 / 3;
   display: flex;
@@ -48,13 +48,13 @@ main {
   align-items: center;
 }
 
-#money_graph_image img {
+#moneyGraphImage img {
   max-width: 100%;
   height: auto;
   margin: 0px;
 }
 
-#title_with_emojis,
+#titleWithEmojis,
 h1 {
   color: white;
   font-size: 50px;
@@ -72,7 +72,7 @@ h3 {
   animation: growing_directions 3s linear;
 }
 
-.input_names_and_boxes {
+.inputNamesAndBoxes {
   grid-column: 1;
   grid-row: 2;
   display: flex;
@@ -81,7 +81,7 @@ h3 {
   align-items: flex-start;
 }
 
-.one_input_name_and_box {
+.oneInputNameAndBox {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -131,7 +131,7 @@ footer a:hover {
   }
 }
 
-.output_elements {
+.outputElements {
   grid-row: 3;
   grid-column: 1 / 3;
   display: flex;
@@ -140,7 +140,7 @@ footer a:hover {
   text-align: center;
 }
 
-@keyframes growing_title {
+@keyframes growingTitle {
   0% {
     font-size: 5px;
     opacity: 0;
@@ -151,7 +151,7 @@ footer a:hover {
   }
 }
 
-@keyframes growing_directions {
+@keyframes growingDirections {
   0% {
     font-size: 5px;
     opacity: 0;
@@ -163,7 +163,7 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
-  @keyframes growing_title_small {
+  @keyframes growingTitleSmall {
     0% {
       font-size: 5px;
       opacity: 0;
@@ -175,11 +175,11 @@ footer a:hover {
   }
 
   h1 {
-    animation: growing_title_small 3s linear;
+    animation: growingTitleSmall 3s linear;
     font-size: 30px;
   }
 
-  @keyframes growing_directions_small {
+  @keyframes growingDirectionsSmall {
     0% {
       font-size: 5px;
       opacity: 0;
@@ -191,7 +191,7 @@ footer a:hover {
   }
 
   h3 {
-    animation: growing_directions_small 3s linear;
+    animation: growingDirectionsSmall 3s linear;
     font-size: 15px;
   }
 }
