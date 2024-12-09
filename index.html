@@ -16,33 +16,28 @@
   </head>
   <body>
     <header>
-      <div id ="title_with_emojis">
-      <div id = "first_money_bag_emoji">&#128176</div>
+      <div id ="titleWithEmojis">
+      <div id = "firstMoneyBagEmoji">&#128176</div>
       <h1>Compound Interest Calculator</h1>
-      <div id = "second_money_bag_emoji">&#128176</div>
+      <div id = "secondMoneyBagEmoji">&#128176</div>
       </div>
       <h3>Please enter each of the elements listed below</h3>
     </header>
 
     <main>
-      <div class="input_names_and_boxes">
-        <div class="one_input_name_and_box">
+      <div class="inputNamesAndBoxes">
+        <div class="oneInputNameAndBox">
           <div>Principal:</div>
           <div>
             <input type="number" placeholder="Enter principal" id="principal" />
           </div>
         </div>
-        <div class="one_input_name_and_box">
+        <div class="oneInputNameAndBox">
           <div>Interest Rate:</div>
           <div>
-            <!-- <input
-              type="number"
-              placeholder="Enter interest rate"
-              id="interest_rate"
-            /> -->
             <input
               type="range"
-              id="interest_rate"
+              id="interestRate"
               min="0.25"
               max="50"
               value="2.5"
@@ -51,10 +46,10 @@
             <output id="aprText">2.5</output>
           </div>
         </div>
-        <div class="one_input_name_and_box">
+        <div class="oneInputNameAndBox">
           <div>Number of times compounded<br />per year:</div>
           <div>
-            <select id="num_of_times_compounded_per_year">
+            <select id="numOfTimesCompoundedPerYear">
               <option value="365">Daily</option>
               <option value="12">Monthly</option>
               <option value="4">Quarterly</option>
@@ -62,27 +57,27 @@
             </select>
           </div>
         </div>
-        <div class="one_input_name_and_box">
+        <div class="oneInputNameAndBox">
           <div>Total number of years:</div>
           <div>
             <input
               type="number"
               placeholder="Enter total number of years"
-              id="total_num_of_years"
+              id="totalNumOfYears"
             />
           </div>
         </div>
       </div>
-      <div id="money_graph_image">
+      <div id="moneyGraphImage">
         <img
           src="https://images.pexels.com/photos/6289026/pexels-photo-6289026.jpeg"
           alt=" Image of a bar graph with a white arrow going up and a gold coin
         above each of the three blue bars against a light purple background"
         />
       </div>
-      <div class="output_elements">
-        <output id="compound_interest">The Interest accumulated is ...</output>
-        <output id="total_with_interest"
+      <div class="outputElements">
+        <output id="compoundInterest">The Interest accumulated is ...</output>
+        <output id="totalWithInterest"
           >The Total including the Compound Interest is ...</output
         >
       </div>
