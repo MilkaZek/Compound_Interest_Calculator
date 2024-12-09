@@ -31,5 +31,5 @@ function updateCompoundInterest() {
   totalAmountOutput.textContent = `The Total including the Compound Interest is $${totalAmount.toFixed(
     2
   )}`;
-  console.log(compoundInterest);
+  console.log(interestAccumulated);
 }
