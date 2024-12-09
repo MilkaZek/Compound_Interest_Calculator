@@ -78,7 +78,7 @@ h3 {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .oneInputNameAndBox {
