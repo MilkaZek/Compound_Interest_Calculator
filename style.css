@@ -96,12 +96,15 @@ h3 {
 
 #interestRate {
   flex-grow: 1;
+  width: 100%;
 }
 
 #aprText {
   margin-left: 10px;
+  min-width: 40px;
   white-space: nowrap;
-  min-width: 30px;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 header,
